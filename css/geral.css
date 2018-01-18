@@ -1,0 +1,8 @@
+@font-face {font-family: "Serpentine";
+    src: url("fonts/serpentine.eot");
+    src: url("fonts/serpentine.eot?#iefix") format("embedded-opentype"),
+    url("fonts/serpentine.woff2") format("woff2"),
+    url("fonts/serpentine.woff") format("woff"),
+    url("fonts/serpentine.ttf") format("truetype"),
+    url("fonts/serpentine.svg#Serpentine") format("svg");
+}
