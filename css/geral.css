@@ -7,63 +7,46 @@
     url("fonts/serpentine.svg#Serpentine") format("svg");
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu a{ margin:0; padding:0; list-style:none; text-decoration:none;}
+ul.menu ul{ position:absolute; display:none; box-shadow:3px 3px 2px #333;}
+ 
+/* Configurações nivel 1*/
+ul.menu{ float:left; font-family:Verdana, Geneva, sans-serif; font-size:15px; border-radius:5px; padding:0 5px;}
+.menu li{ float:left; width:auto; position:relative;}
+.menu li a{ display:block; padding:0 20px; line-height:45px; height:45px; float:left; transition:all 0.1s linear; }
+ 
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1{ display:block; top:45px; left:0; padding:5px; width:200px; border-radius:0 0 5px 5px;   }
+.menu ul.submenu-1 a{  width:160px; padding:0 20px; border-radius:5px;  }
+ 
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-2{ display:block; top:0; left:195px; padding:5px; width:200px;  border-radius: 0 5px 5px 5px; }
+.menu ul.submenu-2 a{  width:160px; padding:0 20px; border-radius:5px; }
+ 
+/* Configurações nivel 3*/
+.menu li:hover > ul.submenu-3{ display:block; top:0; left:195px; padding:5px; width:200px;  border-radius: 0 5px 5px 5px; }
+.menu ul.submenu-3 a{  width:160px; padding:0 20px; border-radius:5px; }
+ 
+ 
+/*Configurações de cores*/
+ 
+/*nivel 1*/
+.menu{background:#CCC; }
+.menu a{ color:#000;}
+.menu li:hover > a{ background:#999;  color:#fff;}
+ 
+/*nivel 2*/
+.submenu-1{ background:#999;}
+.submenu-1 a{color:#fff;}
+.submenu-1 li:hover > a{ background:#666; }
+ 
+/*nivel 3*/
+.submenu-2{ background:#666;}
+.submenu-2 a{color:#fff;}
+.submenu-2 li:hover > a{ background:#333; }
+ 
+/*nivel 3*/
+.submenu-3{ background:#333;}
+.submenu-3 a{color:#fff;}
+.submenu-3 li:hover > a{ background:#000; }
